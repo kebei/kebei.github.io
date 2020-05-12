@@ -30,6 +30,7 @@
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
     "inferno": "^7.4.2",
-    "inferno-create-element": "^7.4.2"
+    "inferno-create-element": "^7.4.2",
+    "valine": "^1.4.7"
   }
 }

@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 北冥有鱼
+title: 北枳南橘
 subtitle: ''
-description: '曾经，我想和你分享我的所有秘密，但现在，你成了我心底的秘密。'
+description: '从来不需要想起，永远也不会忘记。'
 keywords:
-author: 北枳
+author: 柯北
 language: zh-Hans
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://kebei.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

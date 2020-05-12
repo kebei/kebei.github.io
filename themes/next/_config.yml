@@ -12,10 +12,13 @@
 
 # Set to true, if you want to fully override the default configuration.
 # Useful if you don't want to inherit the theme _config.yml configurations.
+#如果要完全覆盖默认配置，请设置为true。
+#如果不想继承主题配置，则此选项非常有用
+
 override: false
 
 # ---------------------------------------------------------------
-# Site Information Settings
+# Site Information Settings #(站点信息设置)
 # ---------------------------------------------------------------
 
 # To get or check favicons visit: https://realfavicongenerator.net
@@ -26,6 +29,12 @@ override: false
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
+#要获取或检查favicons，请访问：https://realfavicongenerator.net
+#将您的favicons放入“hexo site/source/”（推荐）或“hexo site/themes/next/source/images/”目录。
+#默认下一个favicons放在“hexo site/themes/NexT/source/images/”目录中。
+#如果你想把你的图标放在“hexo site/source/”根目录中，你必须从路径中删除“/images”前缀。
+#例如，将favicons放入“hexo site/source/images”目录。
+#然后需要重命名和重新定义任何其他名称，否则从下一个图标将重写您的自定义图标在hexo。
 favicon:
   small: /images/favicon-16x16-next.png
   medium: /images/favicon-32x32-next.png
@@ -34,56 +43,57 @@ favicon:
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
-# Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+# Set default keywords (Use a comma to separate) #设置默认关键词
+keywords: "北枳”“南橘"
 
-# Set rss to false to disable feed link.
-# Leave rss as empty to use site's feed link.
-# Set rss to specific value if you have burned your feed already.
+# Set rss to false to disable feed link. #（将rss设置为false可禁用提要链接。）
+# Leave rss as empty to use site's feed link.  #（保留rss为空以使用站点的提要链接。）
+# Set rss to specific value if you have burned your feed already. #（如果您已经烧掉了订阅源，请将rss设置为特定值。）
+
 rss:
 
 footer:
-  # Specify the date when the site was setup.
-  # If not defined, current year will be used.
+  # Specify the date when the site was setup. #(指定网站的安装日期。)
+  # If not defined, current year will be used. #(如果未定义，则使用当前年度。)
   #since: 2015
 
-  # Icon between year and copyright info.
+  # Icon between year and copyright info. #(年和版权信息之间的图标。)
   icon: user
 
-  # If not defined, will be used `author` from Hexo main config.
+  # If not defined, will be used `author` from Hexo main config. #(如果未定义，将使用Hexo主配置中的“author”。)
   copyright:
   # -------------------------------------------------------------
-  # Hexo link (Powered by Hexo).
-  powered: true
+  # Hexo link (Powered by Hexo). #(Hexo link（由Hexo提供动力）。)
+  powered: false
 
   theme:
-    # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
-    # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    # Theme & scheme info link (Theme - NexT.scheme).  #(主题和方案信息链接（Theme-NexT.scheme）。)
+    enable: false
+    # Version info of NexT after scheme info (vX.X.X). #(方案信息（vX.X.X）之后的下一个版本信息。)
+    version: false
   # -------------------------------------------------------------
-  # Any custom text can be defined here.
+  # Any custom text can be defined here. #(任何自定义文本都可以在这里定义。)
   #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
 
 # ---------------------------------------------------------------
-# SEO Settings
+# SEO Settings (SEO设置）
 # ---------------------------------------------------------------
 
-# Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
+# Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.  #(Canonical，在你的hexo中设置一个Canonical链接标签，你可以将它用于你的博客搜索引擎优化。)
 # See: https://support.google.com/webmasters/answer/139066
 # Tips: Before you open this tag, remember set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
 canonical: true
 
-# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
+# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization. #(更改网站副标题（将是主要网站描述）和所有文章/页面标题的标题层次结构，以更好地优化搜索引擎优化。)
 seo: false
 
-# If true, will add site-subtitle to index page, added in main hexo config.
+# If true, will add site-subtitle to index page, added in main hexo config. #(如果为true，将向索引页添加站点副标题，添加到主hexo配置中。)
 # subtitle: Subtitle
 index_with_subtitle: false
 
 
 # ---------------------------------------------------------------
-# Menu Settings
+# Menu Settings #(菜单设置)
 # ---------------------------------------------------------------
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
@@ -91,12 +101,18 @@ index_with_subtitle: false
 # Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
+#在子目录（例如domain.tld/blog）中运行站点时，请从链接值（/archives->archives）中删除前导斜杠。
+#用法：`Key:/link/| | icon`
+#键是菜单项的名称。如果此菜单的翻译将以语言找到-将加载此翻译；如果不是-将使用键名称。关键是案件敏感。
+#“delimeter”前的值是目标链接。
+#delimeter后面的值是FontAwesome图标的名称。如果未指定图标（带或不带delimeter），则将加载问题图标。
+
 menu:
-  home: / || home
+  home: /|| home
   #about: /about/ || user
   #tags: /tags/ || tags
   #categories: /categories/ || th
-  archives: /archives/ || archive
+  archives: /archives/|| archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -107,7 +123,7 @@ menu_icons:
 
 
 # ---------------------------------------------------------------
-# Scheme Settings
+# Scheme Settings (主题模式设置)
 # ---------------------------------------------------------------
 
 # Schemes
@@ -118,7 +134,7 @@ scheme: Pisces
 
 
 # ---------------------------------------------------------------
-# Sidebar Settings
+# Sidebar Settings  (边栏设置)
 # ---------------------------------------------------------------
 
 # Social Links.
@@ -154,9 +170,19 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/touxiang.jpg
 
 # Table Of Contents in the Sidebar
+
+#侧边栏头像
+#在主题目录中（source/images）：/images/avatar.gif
+#站点目录（source/uploads）：/uploads/avatar.gif
+#avatar:/images/avatar.gif头像
+
+#侧边栏中的目录
+
+
+
 toc:
   enable: true
 
@@ -201,7 +227,7 @@ sidebar:
 
 
 # ---------------------------------------------------------------
-# Post Settings
+# Post Settings  (文章设置)
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
@@ -255,13 +281,13 @@ post_copyright:
 
 
 # ---------------------------------------------------------------
-# Misc Theme Settings
+# Misc Theme Settings  (其他主题设置)
 # ---------------------------------------------------------------
 
-# Reduce padding / margin indents on devices with narrow width.
+# Reduce padding / margin indents on devices with narrow width. (#减少窄宽度设备上的填充/边距缩进。)
 mobile_layout_economy: false
 
-# Android Chrome header panel color ($black-deep).
+# Android Chrome header panel color ($black-deep). (Android Chrome头面板颜色（黑色深）。)
 android_chrome_color: "#222"
 
 # Custom Logo.
@@ -273,7 +299,7 @@ custom_logo:
   enabled: false
   image:
 
-# Code Highlight theme
+# Code Highlight theme  (#代码突出显示主题)
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
@@ -281,7 +307,7 @@ highlight_theme: normal
 
 
 # ---------------------------------------------------------------
-# Font Settings
+# Font Settings  (字体设置)
 # - Find fonts on Google Fonts (https://www.google.com/fonts)
 # - All fonts set here will have the following styles:
 #     light, light italic, normal, normal italic, bold, bold italic
@@ -337,7 +363,7 @@ font:
 
 
 # ---------------------------------------------------------------
-# Third Party Services Settings
+# Third Party Services Settings  (第三方服务设置)
 # ---------------------------------------------------------------
 
 # MathJax Support
@@ -378,13 +404,13 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
+  enable: true
+  appid:  og2Fy1KPBoMj4J0eXvu2Fi0n-gzGzoHsz
+  appkey:  blNich88aSiaeHfTvLQwatgo
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki 邮件提醒
+  verify: false # Verification code  验证码
+  placeholder: 说点什么！ # comment box placeholder
+  avatar: wavatar # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
 
@@ -613,7 +639,7 @@ local_search:
 
 
 # ---------------------------------------------------------------
-# Tags Settings
+# Tags Settings  (标签设置)
 # ---------------------------------------------------------------
 
 # External URL with BASE64 encrypt & decrypt.
@@ -648,7 +674,7 @@ tabs:
 
 
 #! ---------------------------------------------------------------
-#! DO NOT EDIT THE FOLLOWING SETTINGS
+#! DO NOT EDIT THE FOLLOWING SETTINGS   ***不要编辑这些内容***
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
 #! ---------------------------------------------------------------
 
@@ -695,7 +721,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
